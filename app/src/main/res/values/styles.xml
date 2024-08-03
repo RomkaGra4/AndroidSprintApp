@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="StyleTitle14" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/montserrat_alternates_semi_bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="StyleCategoriesButtom" parent="StyleTitle14">
+        <item name="backgroundTint">@color/сategoriesColor</item>
+        <item name="android:text">Категории</item>
+        <item name="android:layout_marginEnd">@dimen/layout_marginEnd</item>
+    </style>
+
+    <style name="StyleFavoritesButtom" parent="StyleTitle14">
+        <item name="backgroundTint">@color/favoritesColor</item>
+        <item name="android:text">Избранное</item>
+        <item name="android:layout_marginStart">@dimen/layout_marginStart</item>
+
+    </style>
+
+</resources>
