@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="layout_marginStart">4px</dimen>
+    <dimen name="layout_marginEnd">4px</dimen>
+
+</resources>
