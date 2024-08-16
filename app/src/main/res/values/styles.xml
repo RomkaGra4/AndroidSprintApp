@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     
     <style name="StyleTitle14" parent="TextAppearance.AppCompat">
@@ -8,17 +7,41 @@
         <item name="android:textColor">#FFFFFF</item>
     </style>
 
-    <style name="StyleCategoriesButtom" parent="StyleTitle14">
+    <style name="StyleButtoms" parent="StyleTitle14">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="backgroundTint">@color/сategoriesColor</item>
         <item name="android:text">Категории</item>
         <item name="android:layout_marginEnd">@dimen/layout_marginEnd</item>
     </style>
 
-    <style name="StyleFavoritesButtom" parent="StyleTitle14">
+    <style name="StyleFavoritesButtom" parent="StyleButtoms">
         <item name="backgroundTint">@color/favoritesColor</item>
         <item name="android:text">Избранное</item>
         <item name="android:layout_marginStart">@dimen/layout_marginStart</item>
 
     </style>
+
+    <style name="Base.Theme.AndroidSprintApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/statusAndNavigBarColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/statusAndNavigBarColor</item>
+
+
+    </style>
+
+    <style name="StyleNavButton" parent="Widget.Material3.Button">
+        <item name="android:textAppearance">@style/StyleTitle14</item>
+        <item name="android:paddingVertical">8px</item>
+        <item name="android:paddingHorizontal">16px</item>
+        <item name="cornerRadius">8px</item>
+    </style>
+
+   <style name="StyleMainLayout" parent="Widget.AppCompat.ActionBar">
+       <item name="android:background">@color/layoutColor</item>
+       <item name="android:layout_width">match_parent</item>
+       <item name="android:layout_height">match_parent</item>
+       <item name="android:paddingTop">2dp</item>
+   </style>
 
 </resources>
