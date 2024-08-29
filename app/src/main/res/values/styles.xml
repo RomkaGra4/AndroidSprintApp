@@ -9,21 +9,21 @@
 
     <style name="StyleButtons" parent="StyleTitle14">
         <item name="backgroundTint">@color/categoriesColor</item>
-        <item name="android:layout_marginEnd">@dimen/layout_marginEnd</item>
-        <item name="cornerRadius">8px</item>
+        <item name="android:layout_marginEnd">@dimen/default_layout_margin</item>
+        <item name="cornerRadius">8dp</item>
     </style>
 
     <style name="Base.Theme.AndroidSprintApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="android:statusBarColor">@color/statusAndNavigBarColor</item>
+        <item name="android:statusBarColor">@color/primaryBackgroundColor</item>
         <item name="android:windowLightStatusBar">true</item>
-        <item name="android:navigationBarColor">@color/statusAndNavigBarColor</item>
+        <item name="android:navigationBarColor">@color/primaryBackgroundColor</item>
     </style>
 
     <style name="StyleNavButton" parent="Widget.Material3.Button">
         <item name="android:textAppearance">@style/StyleTitle14</item>
-        <item name="android:paddingVertical">8px</item>
-        <item name="android:paddingHorizontal">16px</item>
-        <item name="cornerRadius">8px</item>
+        <item name="android:paddingVertical">8dp</item>
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="cornerRadius">8dp</item>
     </style>
 
 </resources>

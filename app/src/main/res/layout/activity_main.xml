@@ -3,15 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/layoutColor"
+    android:background="@color/primaryBackgroundColor"
     android:paddingTop="2dp">
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="6dp"
-        android:layout_marginEnd="6dp"
+        android:layout_marginHorizontal="@dimen/default_layout_marginHorizontal"
         android:theme="@style/StyleNavButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,13 +27,12 @@
             style="@style/StyleButtons"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/layout_marginStart"
+            android:layout_marginStart="@dimen/default_layout_margin"
             android:layout_weight="1"
             android:backgroundTint="@color/favoritesColor"
             android:text="@string/button_string_favorites"
             app:icon="@drawable/ic_heart_empty"
             app:iconGravity="textEnd" />
-
 
     </LinearLayout>
 

@@ -1,13 +1,19 @@
 package com.example.androidsprintapp
 
+import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidsprintapp.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
 
-    val binding by lazy {
+    private val binding: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_main)
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        setContentView(binding.root)
     }
 }
