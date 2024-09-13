@@ -10,7 +10,7 @@
     <style name="StyleButtons" parent="StyleTitle14">
         <item name="backgroundTint">@color/categoriesColor</item>
         <item name="android:layout_marginEnd">@dimen/default_layout_margin</item>
-        <item name="cornerRadius">@dimen/buttonShape</item>
+        <item name="cornerRadius">8dp</item>
     </style>
 
     <style name="Base.Theme.AndroidSprintApp" parent="Theme.Material3.DayNight.NoActionBar">
@@ -23,7 +23,12 @@
         <item name="android:textAppearance">@style/StyleTitle14</item>
         <item name="android:paddingVertical">@dimen/navigation_bar_padding_vertical</item>
         <item name="android:paddingHorizontal">@dimen/navigation_bar_padding_horizontal</item>
-        <item name="cornerRadius">@dimen/buttonShape</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="StyleCategoriesFragment">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
     </style>
 
 </resources>
