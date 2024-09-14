@@ -9,13 +9,19 @@ import com.example.androidsprintapp.databinding.FragmentListCategoriesBinding
 
 class CategoriesListFragment : Fragment() {
 
-    private var binding: FragmentListCategoriesBinding? = null
+    private var _binding: FragmentListCategoriesBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentListCategoriesBinding.inflate(inflater, container, false)
-        return binding!!.root
+        _binding = FragmentListCategoriesBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }
