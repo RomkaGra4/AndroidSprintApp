@@ -4,8 +4,7 @@
     <dimen name="default_layout_margin">4dp</dimen>
     <dimen name="default_layout_marginHorizontal">6dp</dimen>
     <dimen name="textSize">14sp</dimen>
-    <dimen name="navigation_bar_padding_vertical">8dp</dimen>
+    <dimen name="default_spacing_8">8dp</dimen>
     <dimen name="navigation_bar_padding_horizontal">16dp</dimen>
-    <dimen name="l_margin_top_category_fragment">272dp</dimen>
 
 </resources>
