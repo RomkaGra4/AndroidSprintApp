@@ -30,6 +30,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
+            android:id="@+id/categories_button"
             style="@style/StyleButtons"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,6 +38,7 @@
             android:text="@string/button_string_category" />
 
         <Button
+            android:id="@+id/favorite_button"
             style="@style/StyleButtons"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
