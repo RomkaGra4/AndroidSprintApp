@@ -22,22 +22,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        val categoriesButton = findViewById<Button>(R.id.categories_button)
-        val favoriteButton = findViewById<Button>(R.id.favorite_button)
-
-        categoriesButton.setOnClickListener {
+        binding.categoriesButton.setOnClickListener {
             supportFragmentManager.commit {
-                replace<CategoriesListFragment>(R.id.categories_button)
+                replace<CategoriesListFragment>(R.id.mainContainer)
                 setReorderingAllowed(true)
-                addToBackStack("")
+                addToBackStack(null)
             }
         }
 
-        favoriteButton.setOnClickListener {
+        binding.favoriteButton.setOnClickListener {
             supportFragmentManager.commit {
-                replace<FavoritesFragment>(R.id.favorite_button)
+                replace<FavoritesFragment>(R.id.mainContainer)
                 setReorderingAllowed(true)
-                addToBackStack("")
+                addToBackStack(null)
             }
         }
 
