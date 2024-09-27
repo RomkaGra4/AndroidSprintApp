@@ -2,5 +2,6 @@
     <string name="app_name">AndroidSprintApp</string>
     <string name="button_string_favorites">Избранное</string>
     <string name="button_string_category">Категории</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
