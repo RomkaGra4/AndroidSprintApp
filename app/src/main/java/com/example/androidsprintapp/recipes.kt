@@ -1,8 +1,5 @@
 package com.example.androidsprintapp
 
-import java.util.Locale.Category
-
-
 object STUB {
 
     private val categories = listOf(
@@ -14,4 +11,11 @@ object STUB {
         Category(5, "Салаты", "Хрустящий калейдоскоп под соусом вдохновения", "salad.png")
 
     )
+
+    fun getCategories(): List<com.example.androidsprintapp.Category> {
+
+        return categories
+
+    }
 }
+
