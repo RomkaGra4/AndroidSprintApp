@@ -12,10 +12,8 @@ object STUB {
 
     )
 
-    fun getCategories(): List<com.example.androidsprintapp.Category> {
-
+    fun getCategories(): List<Category> {
         return categories
-
     }
 }
 
