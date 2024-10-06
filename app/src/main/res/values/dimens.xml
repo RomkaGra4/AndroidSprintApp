@@ -8,5 +8,15 @@
     <dimen name="default_spacing_8">8dp</dimen>
     <dimen name="default_padding_10">10dp</dimen>
     <dimen name="default_padding_or_margin_16">16dp</dimen>
+    <dimen name="header_image_height">224dp</dimen>
+
+    <dimen name="category_item_width">156dp</dimen>
+    <dimen name="category_item_height">220dp</dimen>
+    <dimen name="category_image_height">130dp</dimen>
+    <dimen name="category_name_width">73dp</dimen>
+    <dimen name="category_name_height">16dp</dimen>
+    <dimen name="category_description_height">90dp</dimen>
+
+
 
 </resources>

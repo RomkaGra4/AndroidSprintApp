@@ -26,7 +26,7 @@
         <item name="cornerRadius">@dimen/default_spacing_8</item>
     </style>
 
-    <style name="ShapeDrawable">
+    <style name="ShapedTextDrawable">
         <item name="textAllCaps">true</item>
         <item name="android:textSize">@dimen/text_size_shape_drawable</item>
         <item name="android:textColor">@color/shapeDrawableColor</item>
