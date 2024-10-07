@@ -45,7 +45,7 @@
         android:layout_marginTop="@dimen/default_padding_or_margin_16"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="2"
-        tools:itemCount="2"
+        tools:itemCount="6"
         tools:listitem="@layout/item_category" />
 
 </LinearLayout>
