@@ -6,5 +6,6 @@
     <color name="categoriesColor">#525DC0</color>
     <color name="favoritesColor">#E13E3E</color>
     <color name="primaryBackgroundColor">#F4FAFF</color>
-
+    <color name="shapeDrawableColor">#5F3678</color>
+    
 </resources>
