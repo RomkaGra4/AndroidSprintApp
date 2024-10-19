@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_marginHorizontal="@dimen/default_spacing_8"
+    android:layout_marginVertical="@dimen/default_padding_or_margin_16"
     android:clickable="true"
     android:focusable="true"
     android:foreground="?attr/selectableItemBackground"
@@ -17,7 +18,7 @@
 
         <ImageView
             android:id="@+id/category_image"
-            android:layout_width="@dimen/item_category_width"
+            android:layout_width="match_parent"
             android:layout_height="@dimen/item_category_image_height"
             android:scaleType="centerCrop"
             tools:src="@drawable/burger"/>
