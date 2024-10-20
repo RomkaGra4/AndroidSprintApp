@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/default_spacing_8"
-            android:layout_marginStart="@dimen/default_spacing_8"
+            android:layout_marginHorizontal="@dimen/default_spacing_8"
             tools:text="Заголовок"
             android:textSize="14sp" />
 
@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/category_description_height"
             android:layout_marginTop="@dimen/default_spacing_8"
-            android:layout_marginStart="@dimen/default_spacing_8"
+            android:layout_marginHorizontal="@dimen/default_spacing_8"
             tools:text="Описание"
             android:textSize="@dimen/category_description_text_size" />
 
