@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.androidsprintapp.databinding.FragmentFavoritesBinding
 import com.example.androidsprintapp.databinding.FragmentListCategoriesBinding
+import java.util.Locale
 
 class FavoritesFragment : Fragment() {
 
