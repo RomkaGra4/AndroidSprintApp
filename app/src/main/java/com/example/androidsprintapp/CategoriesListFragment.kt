@@ -30,10 +30,7 @@ class CategoriesListFragment : Fragment() {
     private fun initRecycler(){
         val categories = STUB.getCategories()
         val adapter = CategoriesListAdapter(categories)
-        val recyclerView = binding.rvCategories
-
-        recyclerView.adapter = adapter
-        recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.rvCategories.adapter = adapter
     }
 
     override fun onDestroy() {
