@@ -27,6 +27,7 @@ class CategoriesListAdapter(private val dataSet: List<Category>) :
                 null
             }
             binding.categoryImage.setImageDrawable(drawable)
+            binding.categoryImage.contentDescription = "Изображение категории ${category.title}"
         }
     }
 
