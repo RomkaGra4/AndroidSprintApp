@@ -3,5 +3,6 @@
     <string name="button_string_favorites">Избранное</string>
     <string name="button_string_category">Категории</string>
     <string name="description_categories_image">Image of categories background</string>
+    <string name="sample_category_description">Изображение категории</string>
 
 </resources>
