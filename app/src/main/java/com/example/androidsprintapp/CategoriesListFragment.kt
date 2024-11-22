@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.androidsprintapp.databinding.FragmentListCategoriesBinding
 
 class CategoriesListFragment : Fragment() {
@@ -29,8 +28,32 @@ class CategoriesListFragment : Fragment() {
 
     private fun initRecycler(){
         val categories = STUB.getCategories()
-        val adapter = CategoriesListAdapter(categories)
-        binding.rvCategories.adapter = adapter
+        val categoriesAdapter = CategoriesListAdapter(categories)
+
+        categoriesAdapter.setOnItemClickListener(object : CategoriesListAdapter.OnItemClickListener {
+            override fun onItemClick(category: Category) {
+                openRecipesByCategoryId(category.id.toString())
+            }
+        })
+
+        binding.rvCategories.adapter = categoriesAdapter
+    }
+
+    private fun openRecipesByCategoryId(categoryId: String) {
+        val fragment = RecipesListFragment.newInstance(categoryId)
+
+        val transaction = parentFragmentManager.beginTransaction()
+        transaction.replace(R.id.mainContainer, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
+    }
+
+    fun onItemClick(category: Category) {
+        val fragment = RecipesListFragment()
+        val transaction = parentFragmentManager.beginTransaction()
+        transaction.replace(R.id.mainContainer, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
     }
 
     override fun onDestroy() {

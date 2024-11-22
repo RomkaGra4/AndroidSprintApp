@@ -22,6 +22,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        supportFragmentManager.commit {
+            setReorderingAllowed(true)
+            add<RecipesListFragment>(R.id.mainContainer)
+        }
+
         binding.categoriesButton.setOnClickListener {
             supportFragmentManager.commit {
                 replace<CategoriesListFragment>(R.id.mainContainer)
